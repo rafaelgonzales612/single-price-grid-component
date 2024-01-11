@@ -13,6 +13,7 @@ html {
 
 body {
   font-size: 1.6rem;
+  font-family: "Karla", sans-serif;
 }
 
 img,
@@ -32,6 +33,7 @@ textarea {
 :root {
   /* COLORS */
   --color-cyan: hsl(179, 62%, 43%);
+  --color-lightcyan: hsl(179, 61%, 49%);
   --color-brightyellow: hsl(71, 73%, 54%);
   --color-lightgray: hsl(204, 43%, 93%);
   --color-grayishblue: hsl(218, 22%, 67%);
@@ -41,11 +43,128 @@ textarea {
 }
 
 /* === GENERAL STYLES === */
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: var(--color-lightgray);
+}
 
+.cards {
+  min-width: 375px;
+  max-width: 375px;
+  height: auto;
+}
+
+.card-container {
+  padding: 2rem 2rem 0 2rem;
+}
+
+/* = CARD 1 = */
+.card-1-container {
+  background-color: #fff;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.card-1-title,
+.card-1-subtitle,
+.card-1-content {
+  padding-bottom: 2rem;
+}
+
+.card-1-title,
+.card-1-subtitle {
+  font-weight: var(--fw-bold);
+}
+
+.card-1-title {
+  color: var(--color-cyan);
+}
+
+.card-1-subtitle {
+  color: var(--color-brightyellow);
+}
+
+.card-1-content {
+  color: #555;
+  line-height: 1.8;
+  font-weight: var(--fw-regular);
+}
+
+/* = CARD 2 = */
+.card-2-container {
+  background-color: var(--color-cyan);
+}
+
+.card-2-title,
+.card-2-subtitle,
+.card-2-content,
+.card-button {
+  padding-bottom: 2rem;
+  color: #eee;
+}
+
+.card-2-cost {
+  font-size: 3rem;
+}
+
+.card-2-per-month {
+  font-weight: 200;
+}
+
+.card-button {
+  border: none;
+  width: 100%;
+  background-color: var(--color-brightyellow);
+  border-radius: 0.5rem;
+  padding: 1rem 0;
+  margin: 2rem 0;
+  font-weight: var(--fw-bold);
+}
+
+/* = CARD 3 = */
+.card-3-container {
+  background-color: var(--color-lightcyan);
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
+.card-3-title,
+.card-3-content {
+  color: #eee;
+}
+
+.card-3-title {
+  padding-bottom: 2rem;
+}
+
+.card-list {
+  list-style-type: none;
+  padding-bottom: 2rem;
+}
+
+.card-list li {
+  padding: 0.3rem 0;
+}
+
+/* = FOOTER = */
 .attribution {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   text-align: center;
+  padding-top: 1rem;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+.visually-hidden {
+  clip-path: inset(50%);
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
 }
