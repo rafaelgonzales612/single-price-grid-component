@@ -116,13 +116,19 @@ body {
 }
 
 .card-button {
-  border: none;
+  border: 1px solid var(--color-brightyellow);
   width: 100%;
   background-color: var(--color-brightyellow);
   border-radius: 0.5rem;
   padding: 1rem 0;
   margin: 2rem 0;
   font-weight: var(--fw-bold);
+  transition: 0.2s ease-in-out;
+}
+
+.card-button a {
+  text-decoration: none;
+  color: inherit;
 }
 
 /* = CARD 3 = */
@@ -196,5 +202,12 @@ body {
 
   .card-3-container {
     border-bottom-left-radius: 0;
+  }
+
+  .card-button:hover {
+    cursor: pointer;
+    background-color: #fff;
+    color: var(--color-brightyellow);
+    transition: 0.2s ease-in-out;
   }
 }
