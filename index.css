@@ -126,11 +126,6 @@ body {
   transition: 0.2s ease-in-out;
 }
 
-.card-button a {
-  text-decoration: none;
-  color: inherit;
-}
-
 /* = CARD 3 = */
 .card-3-container {
   background-color: var(--color-lightcyan);
