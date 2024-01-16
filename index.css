@@ -86,6 +86,7 @@ body {
 
 .card-1-subtitle {
   color: var(--color-brightyellow);
+  font-size: 1.8rem;
 }
 
 .card-1-content {
