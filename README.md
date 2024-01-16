@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/single-price-grid-component-using-html-and-css-sSq3TUvF2d](https://www.frontendmentor.io/solutions/single-price-grid-component-using-html-and-css-sSq3TUvF2d)
 - Live Site URL: [https://singlepricegrid-rafaelgonz.netlify.app/](https://singlepricegrid-rafaelgonz.netlify.app/)
 
 ## My process
